@@ -1,7 +1,5 @@
 let pantallas = [];
 let pantallaActual;
-let mousex
-let mousey
 
 function setup() {
   createCanvas(428, 926);
@@ -10,11 +8,9 @@ function setup() {
 }
 
 function draw() {
-  fill(255);
-  text('pos MouseX:' + mousex, 50, 100);
-  text('pos MouseY:' + mousey, 50, 120);
   background(220);
   image(pantallas[pantallaActual], 0, 0);
+  console.log("X: " + parseInt(mouseX) + " Y: " + parseInt(mouseY));
 }
 
 function preload() {
@@ -24,10 +20,10 @@ function preload() {
   pantallas[3] = loadImage("assets/Pantalla3.png");
   pantallas[4] = loadImage("assets/Pantalla4.png");
   pantallas[5] = loadImage("assets/Pantalla5.png");
-  pantallas[6] = loadImage("assets/Pantalla5.png");
-  pantallas[7] = loadImage("assets/Pantalla5.png");
-  pantallas[8] = loadImage("assets/Pantalla5.png");
-  pantallas[9] = loadImage("assets/Pantalla5.png");
+  pantallas[6] = loadImage("assets/Pantalla6.png");
+  pantallas[7] = loadImage("assets/Pantalla7.png");
+  pantallas[8] = loadImage("assets/Pantalla8.png");
+  pantallas[9] = loadImage("assets/Pantalla9.png");
   pantallas[11] = loadImage("assets/Pantalla11.png");
 }
 
@@ -67,16 +63,22 @@ function mousePressed() {
     pantallaActual = 11;
   }
 
-  // Presionar de emergencia alta
-  if (mouseX > 379 && mouseX < 379 + 16 && mouseY > 881 && mouseY < 881 + 17 &&
-    pantallaActual === 4) {
-    pantallaActual = 5;
+  // Boton de emergencia alta
+  if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 478 && mouseY < 478 + 40 &&
+    pantallaActual === 2) {
+    pantallaActual = 6;
   }
 
-  // Botón de dudas generales
-  if (mouseX > 54 && mouseX < 54 + 305 && mouseY > 528 && mouseY < 528 + 31 &&
-    pantallaActual === 2) {
-    pantallaActual = 11;
+  // Botón comenzar asistencia
+  if (mouseX > 128 && mouseX < 128 + 175 && mouseY > 666 && mouseY < 666 + 40 &&
+    pantallaActual === 6) {
+    pantallaActual = 7;
+  }
+
+   // Botón comenzar asistencia
+   if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 450 && mouseY < 450 + 40 &&
+    pantallaActual === 7) {
+    pantallaActual = 8;
   }
 
 
