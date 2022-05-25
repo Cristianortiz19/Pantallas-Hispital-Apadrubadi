@@ -38,6 +38,4 @@ function mousePressed() {
     pantallaActual = 3;
   }
 }
- 
 
-// primer commit autorizado
