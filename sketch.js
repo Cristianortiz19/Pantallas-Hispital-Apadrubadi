@@ -1,3 +1,4 @@
+pantallas = [];
 function setup() {
   createCanvas(428, 926);
 }
