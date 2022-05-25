@@ -24,7 +24,9 @@ function preload() {
   pantallas[7] = loadImage("assets/Pantalla7.png");
   pantallas[8] = loadImage("assets/Pantalla8.png");
   pantallas[9] = loadImage("assets/Pantalla9.png");
+  pantallas[10] = loadImage("assets/Pantalla10.png")
   pantallas[11] = loadImage("assets/Pantalla11.png");
+  pantallas[12] = loadImage("assets/Pantalla12.png");
 }
 
 function mousePressed() {
@@ -57,11 +59,24 @@ function mousePressed() {
     pantallaActual = 5;
   }
 
+  // Botón hacer encuesta
+  if (mouseX > 27 && mouseX < 27 + 305 && mouseY > 839 && mouseY < 839 + 51 &&
+    pantallaActual === 5) {
+    pantallaActual = 12;
+  }
+
   // Botón de dudas generales
   if (mouseX > 54 && mouseX < 54 + 305 && mouseY > 528 && mouseY < 528 + 31 &&
     pantallaActual === 2) {
     pantallaActual = 11;
   }
+
+   // Botón hacer encuesta
+   if (mouseX > 54 && mouseX < 54 + 305 && mouseY > 676 && mouseY < 676 + 62 &&
+    pantallaActual === 11) {
+    pantallaActual = 12;
+  }
+
 
   // Boton de emergencia alta
   if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 478 && mouseY < 478 + 40 &&
@@ -79,6 +94,29 @@ function mousePressed() {
    if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 450 && mouseY < 450 + 40 &&
     pantallaActual === 7) {
     pantallaActual = 8;
+  }
+  //carga de llamada (hay que cambiarlo)
+  if (mouseX > 45 && mouseX < 45 + 108 && mouseY > 874 && mouseY < 874 + 31 &&
+    pantallaActual === 8) {
+    pantallaActual = 9;
+  }
+
+  // Botón terminar llamada
+  if (mouseX > 166 && mouseX < 166 + 92 && mouseY > 754 && mouseY < 754 + 94 &&
+    pantallaActual === 9) {
+    pantallaActual = 10;
+  }
+
+  // Botón hacer encuesta
+  if (mouseX > 32 && mouseX < 32 + 303 && mouseY > 280 && mouseY < 280 + 54 &&
+    pantallaActual === 10) {
+    pantallaActual = 12;
+  }
+
+   // Botón enviar encuesta
+   if (mouseX > 110 && mouseX < 110 + 203 && mouseY > 814 && mouseY < 814 + 53 &&
+    pantallaActual === 12) {
+    pantallaActual = 1;
   }
 
 
