@@ -40,5 +40,14 @@ function mousePressed() {
     pantallaActual === 2){
     pantallaActual = 3;
   }
+
+  // Botón de comenzar asistencia
+  if(mouseX > 128 && mouseX < 128 + 312 && mouseY > 666 && mouseY < 666 + 42 &&
+    pantallaActual === 3){
+    pantallaActual = 4;
+  }
+
+
+  
 }
 
