@@ -46,6 +46,11 @@ function mousePressed() {
     pantallaActual === 3){
     pantallaActual = 4;
   }
+    // Presionar en el mic de pantalla 4
+    if(mouseX > 379 && mouseX < 379 + 16 && mouseY > 881 && mouseY < 881 + 17 &&
+      pantallaActual === 4){
+      pantallaActual = 5;
+    }
 
 
   
