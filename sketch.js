@@ -52,6 +52,13 @@ function mousePressed() {
       pantallaActual = 5;
     }
 
+    // Botón de dudas generales
+  if(mouseX > 54 && mouseX < 54 + 305 && mouseY > 528 && mouseY < 528 + 31 &&
+    pantallaActual === 2){
+    pantallaActual = 11;
+  }
+    
+
 
   
 }
