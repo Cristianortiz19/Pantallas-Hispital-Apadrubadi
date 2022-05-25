@@ -17,6 +17,9 @@ function preload() {
   pantallas[1] = loadImage("assets/Pantalla1.png");
   pantallas[2] = loadImage("assets/Pantalla2.png");
   pantallas[3] = loadImage("assets/Pantalla3.png");
+  pantallas[4] = loadImage("assets/Pantalla4.png");
+  pantallas[5] = loadImage("assets/Pantalla5.png");
+  pantallas[11] = loadImage("assets/Pantalla11.png");
 }
 
 function mousePressed() {
