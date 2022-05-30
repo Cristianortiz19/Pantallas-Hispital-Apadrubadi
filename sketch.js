@@ -27,6 +27,7 @@ function preload() {
   pantallas[10] = loadImage("assets/Pantalla10.png")
   pantallas[11] = loadImage("assets/Pantalla11.png");
   pantallas[12] = loadImage("assets/Pantalla12.png");
+  pantallas[13] = loadImage("assets/Pantalla13.png");
 }
 
 function mousePressed() {
@@ -81,23 +82,23 @@ function mousePressed() {
   // Boton de emergencia alta
   if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 478 && mouseY < 478 + 40 &&
     pantallaActual === 2) {
-    pantallaActual = 6;
+    pantallaActual = 8;
   }
 
   // Botón comenzar asistencia
-  if (mouseX > 128 && mouseX < 128 + 175 && mouseY > 666 && mouseY < 666 + 40 &&
-    pantallaActual === 6) {
+  if (mouseX > 127 && mouseX < 172 + 175 && mouseY > 544 && mouseY < 544 + 38 &&
+    pantallaActual === 8) {
     pantallaActual = 7;
   }
 
    // Botón comenzar asistencia
    if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 450 && mouseY < 450 + 40 &&
     pantallaActual === 7) {
-    pantallaActual = 8;
+    pantallaActual = 13;
   }
   //carga de llamada (hay que cambiarlo)
-  if (mouseX > 45 && mouseX < 45 + 108 && mouseY > 874 && mouseY < 874 + 31 &&
-    pantallaActual === 8) {
+  if (mouseX > 43 && mouseX < 43 + 113 && mouseY > 875 && mouseY < 875 + 34 &&
+    pantallaActual === 13) {
     pantallaActual = 9;
   }
 
