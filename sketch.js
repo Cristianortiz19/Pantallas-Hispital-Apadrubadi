@@ -28,6 +28,7 @@ function preload() {
   pantallas[11] = loadImage("assets/Pantalla11.png");
   pantallas[12] = loadImage("assets/Pantalla12.png");
   pantallas[13] = loadImage("assets/Pantalla13.png");
+  pantallas[14] = loadImage("assets/Pantalla14.png");
 }
 
 function mousePressed() {
@@ -85,10 +86,16 @@ function mousePressed() {
     pantallaActual = 8;
   }
 
-  // Botón comenzar asistencia
-  if (mouseX > 127 && mouseX < 172 + 175 && mouseY > 544 && mouseY < 544 + 38 &&
+  // Boton de elegir especialidad
+  if (mouseX > 56 && mouseX < 56 + 314 && mouseY > 492 && mouseY < 492 + 37 &&
     pantallaActual === 8) {
-    pantallaActual = 7;
+    pantallaActual = 14;
+  }
+
+  // Botón comenzar asistencia
+  if (mouseX > 127 && mouseX < 172 + 173 && mouseY > 747 && mouseY < 747 + 37 &&
+    pantallaActual === 14) {
+    pantallaActual = 13;
   }
 
    // Botón comenzar asistencia
