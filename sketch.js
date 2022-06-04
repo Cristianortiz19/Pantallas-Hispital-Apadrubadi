@@ -62,7 +62,7 @@ function mousePressed() {
   }
 
   // Botón hacer encuesta
-  if (mouseX > 27 && mouseX < 27 + 305 && mouseY > 839 && mouseY < 839 + 51 &&
+  if (mouseX > 23 && mouseX < 23 + 303 && mouseY > 795 && mouseY < 795 + 50 &&
     pantallaActual === 5) {
     pantallaActual = 12;
   }
