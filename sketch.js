@@ -18,8 +18,8 @@ function preload() {
   pantallas[1] = loadImage("assets/Pantalla1.png");
   pantallas[2] = loadImage("assets/Pantalla2.png");
   pantallas[3] = loadImage("assets/Pantalla3.png");
-  pantallas[4] = loadImage("assets/Pantalla4.png");
-  pantallas[5] = loadImage("assets/Pantalla5.png");
+  pantallas[4] = loadImage("assets/pantalla 4.png");
+  pantallas[5] = loadImage("assets/pantalla 5.png");
   pantallas[6] = loadImage("assets/Pantalla6.png");
   pantallas[7] = loadImage("assets/Pantalla7.png");
   pantallas[8] = loadImage("assets/Pantalla8.png");
