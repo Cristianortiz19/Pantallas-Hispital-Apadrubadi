@@ -81,7 +81,7 @@ function mousePressed() {
 
 
   // Boton de emergencia alta
-  if (mouseX > 54 && mouseX < 54 + 320 && mouseY > 478 && mouseY < 478 + 40 &&
+  if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 478 && mouseY < 478 + 40 &&
     pantallaActual === 2) {
     pantallaActual = 8;
   }
@@ -93,7 +93,7 @@ function mousePressed() {
   }
 
   // Botón comenzar asistencia
-  if (mouseX > 127 && mouseX < 172 + 173 && mouseY > 747 && mouseY < 747 + 37 &&
+  if (mouseX > 127 && mouseX < 127 + 174 && mouseY > 747 && mouseY < 747 + 40 &&
     pantallaActual === 14) {
     pantallaActual = 13;
   }
