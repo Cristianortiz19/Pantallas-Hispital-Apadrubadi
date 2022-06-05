@@ -30,6 +30,8 @@ function preload() {
   pantallas[11] = loadImage("assets/Pantalla11.png");
   pantallas[12] = loadImage("assets/Pantalla12.png");
   pantallas[13] = loadImage("assets/Pantalla13.png");
+  pantallas[14] = loadImage("assets/Pantalla14.png");
+  pantallas[15] = loadImage("assets/Pantalla15.png");
 }
 
 function mousePressed() {
@@ -91,31 +93,32 @@ function mousePressed() {
   // Boton de emergencia ALTA
   if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 478 && mouseY < 478 + 40 &&
     pantallaActual === 2) {
-    pantallaActual = 13;
+    pantallaActual = 15;
   }
 
   // Boton de elegir especialidad
   if (mouseX > 56 && mouseX < 56 + 314 && mouseY > 492 && mouseY < 492 + 37 &&
-    pantallaActual === 13) {
-    pantallaActual = 3;
+    pantallaActual === 15) {
+    pantallaActual = 14;
   }
 
   // Botón comenzar asistencia
-  if (mouseX > 127 && mouseX < 127 + 174 && mouseY > 747 && mouseY < 747 + 40 &&
-    pantallaActual === 3) {
+  if (mouseX > 127 && mouseX < 127 + 172 && mouseY > 747 && mouseY < 747 + 37 &&
+    pantallaActual === 14) {
     pantallaActual = 7;
   }
 
-   // Botón comenzar asistencia
-   if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 450 && mouseY < 450 + 40 &&
+  // Botón comenzar asistencia
+  if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 450 && mouseY < 450 + 40 &&
     pantallaActual === 7) {
-    pantallaActual = 13;
+    pantallaActual = 8;
   }
+
   //carga de llamada (hay que cambiarlo)
-  if (pantallaActual === 7) {
+  if (pantallaActual === 8) {
     setTimeout(() => {
       pantallaActual = 9
-    }, 3000);
+    }, 2000);
 }
 
   // Botón terminar llamada
