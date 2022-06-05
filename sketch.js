@@ -10,7 +10,9 @@ function setup() {
 function draw() {
   background(220);
   image(pantallas[pantallaActual], 0, 0);
-  console.log("X: " + parseInt(mouseX) + " Y: " + parseInt(mouseY));
+  //console.log("X: " + parseInt(mouseX) + " Y: " + parseInt(mouseY));
+  console.log(pantallaActual);
+  
 }
 
 function preload() {
@@ -45,7 +47,7 @@ function mousePressed() {
   }
 
   // Botón de urgencia BAJA
-  if (mouseX > 55 && mouseX < 55 + 312 && mouseY > 427 && mouseY < 427 + 42 &&
+  if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 428 && mouseY < 428 + 40 &&
     pantallaActual === 2) {
     pantallaActual = 3;
   }
@@ -80,7 +82,7 @@ function mousePressed() {
   }
 
 
-  // Boton de emergencia alta
+  // Boton de emergencia ALTA
   if (mouseX > 54 && mouseX < 54 + 315 && mouseY > 478 && mouseY < 478 + 40 &&
     pantallaActual === 2) {
     pantallaActual = 8;
@@ -104,10 +106,11 @@ function mousePressed() {
     pantallaActual = 13;
   }
   //carga de llamada (hay que cambiarlo)
-  if (mouseX > 43 && mouseX < 43 + 113 && mouseY > 875 && mouseY < 875 + 34 &&
-    pantallaActual === 13) {
-    pantallaActual = 9;
-  }
+  if (pantallaActual === 13) {
+    setTimeout(() => {
+      this.pantallaActual = 9
+    }, 2000);
+}
 
   // Botón terminar llamada
   if (mouseX > 166 && mouseX < 166 + 92 && mouseY > 754 && mouseY < 754 + 94 &&
