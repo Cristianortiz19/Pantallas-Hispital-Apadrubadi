@@ -3,7 +3,7 @@ let pantallaActual;
 
 function setup() {
   createCanvas(428, 926);
-  pantallaActual = 3;
+  pantallaActual = 0;
   preload();
 }
 
@@ -43,7 +43,7 @@ function mousePressed() {
   }
 
   // Botón de urgencia BAJA
-  if (mouseX > 126 && mouseX < 126 + 180 && mouseY > 748 && mouseY < 748 + 40 &&
+  if (mouseX > 126 && mouseX < 126 + 170 && mouseY > 748 && mouseY < 748 + 40 &&
     pantallaActual === 2) {
     pantallaActual = 3;
   }
@@ -95,10 +95,11 @@ function mousePressed() {
     pantallaActual === 7) {
     pantallaActual = 8;
   }
-  //carga de llamada (hay que cambiarlo)
-  if (mouseX > 45 && mouseX < 45 + 108 && mouseY > 874 && mouseY < 874 + 31 &&
-    pantallaActual === 8) {
-    pantallaActual = 9;
+  //carga de llamada
+  if (pantallaActual === 8) {
+    setTimeout(() => {
+      pantallaActual= 9;
+    }, 3000);
   }
 
   // Botón terminar llamada
