@@ -3,7 +3,7 @@ let pantallaActual;
 
 function setup() {
   createCanvas(428, 926);
-  pantallaActual = 0;
+  pantallaActual = 3;
   preload();
 }
 
@@ -43,7 +43,7 @@ function mousePressed() {
   }
 
   // Botón de urgencia BAJA
-  if (mouseX > 55 && mouseX < 55 + 312 && mouseY > 427 && mouseY < 427 + 42 &&
+  if (mouseX > 126 && mouseX < 126 + 180 && mouseY > 748 && mouseY < 748 + 40 &&
     pantallaActual === 2) {
     pantallaActual = 3;
   }
